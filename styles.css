@@ -4,7 +4,7 @@ body {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: lightgray;
-  text-decoration: none;
+ 
 }
 .container {
   position: relative;
@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: 100px;
 }
 .back-vid {
   position: fixed;
@@ -21,9 +21,9 @@ body {
   bottom: 0;
   z-index: -1;
   mix-blend-mode: overlay;
+  width: 100%;
 }
 header {
-  width: 100%;
   height: 70px;
   position: absolute;
   top: 0;
@@ -31,7 +31,6 @@ header {
   left: 0;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.123);
   backdrop-filter: blur(10px);
@@ -42,7 +41,7 @@ header {
 
 .left {
   display: flex;
-  justify-content: flex-start;
+ 
   align-items: center;
 }
 .left img {
@@ -113,4 +112,17 @@ header {
 .black-hole video{
   width: 100%;
   margin-top: -23.5%;
+}
+@media (max-aspect-ratio: 16/9){
+  .back-vid{
+  
+    width: auto;
+    height: 100%;
+  }
+}
+@media (min-aspect-ratio: 16/9){
+  .back-vid{
+    width: 100%;
+    height: auto;
+  }
 }
