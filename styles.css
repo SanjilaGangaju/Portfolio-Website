@@ -167,7 +167,7 @@ header {
   margin-bottom: 40px;
   font-size: 20px;
 }
-.hero button{
+.contact-button{
   border: 1px solid #727fdeb4;
   border-radius: 10px;
    padding: 15px 35px;
@@ -186,7 +186,7 @@ header {
 }
 .hero-vid-box video{
   height: 700px;
-  mix-blend-mode: difference;
+  mix-blend-mode: lighten;
 }
 .gradient{
   background: linear-gradient(to right,#008baa, #7e42a7, #6600c5, #6070fd, #2a46ff, #0099ff, #008ead);
@@ -243,4 +243,62 @@ header {
     opacity: 0;
   }
   
+}
+.info-section{
+  padding: 4%;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.info-boxes{
+  border: 2px solid #001f7c38;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+}
+.info-boxes:hover{
+  box-shadow: 0 0 5px #8c97ec86;
+}
+.info-boxes p{
+  font-size: 0.8rem;
+}
+.info-boxes h4{
+  font-size: 40px;
+  font-weight: 700;
+}
+.grid-1 img{
+  width: 70px;
+  height: 70px;
+  border-radius: 15px;
+  
+}
+.grid-4{
+  grid-column: span 2;
+}
+.grid-2 img{
+  height: 200px;
+  width: 200px;
+
+}
+.grid-3{
+  grid-row: span 2;
+}
+.grid-3 video{
+  height: 300px;
+  width: 300px;
+  mix-blend-mode: lighten;
+  
+}
+.grid-4 img{
+  height: 200px;
+  
+
+}
+.grid-3 button{
+  margin-left: -50%;
 }
