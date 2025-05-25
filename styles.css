@@ -248,6 +248,7 @@ header {
   display: flex;
   flex-direction: column;
   width: 80%;
+  height: auto;
   margin-top: 100px;
   align-items: center;
 }
@@ -267,11 +268,6 @@ header {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  height: 40vh;
-  overflow: hidden;
-  width: auto;
-
-
 }
 .info-boxes:hover{
   box-shadow: 0 0 5px #8c97ec86;
@@ -285,7 +281,7 @@ header {
   max-width: 300px;
   color: gray;
   font-size: 13px;
-  line-height: 20px;
+  line-height: 21px;
 
 }
 .info-boxes h4{
@@ -304,9 +300,15 @@ header {
 }
 
 .info-boxes img{
-  width: 50%;
-  height: 50%;
-  object-fit: cover;
+ width: 100%;
+ height: 50%;
+ margin-top: 16px;
+ 
+}
+.grid-1 img{
+  width: 100px;
+  height: 80px;
+  border-radius: 10px;
 }
 .grid-4{
   grid-column: span 2;
