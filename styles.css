@@ -246,6 +246,7 @@ header {
 }
 .info-container{
   width : 80%;
+  
 }
 .info-section{
   display: grid;
@@ -256,7 +257,8 @@ header {
 .info-boxes{
   border: 1px solid #727fde65;
   border-radius: 15px;
-  padding: 0 10px;
+  padding: 10px 10px;
+  height: auto;
 }
 .grid-4{
   grid-column: span 2;
@@ -264,4 +266,56 @@ header {
 .grid-3 {
   grid-row: span 2;
 
+}
+.grid-3 button{
+  border: 1px solid #727fdeb4;
+  border-radius: 10px;
+  padding: 6px 10px; 
+  color: #fff;
+  box-shadow: 0 0 5px #727fde86;
+  background-color: #2200493d;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.info-greet h3{
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.info-boxes img{
+  height: 50%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+.info-boxes p{
+  font-size: 0.93rem;
+  
+
+}
+.info-boxes h4{
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: -1%;
+
+}
+.grid-1 img{
+  height: 25%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+}
+.grid-3 video{
+  height: 70%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  mix-blend-mode: lighten;
+}
+.info-boxes:hover{
+  box-shadow: 0 0 7px #727fde;
 }
