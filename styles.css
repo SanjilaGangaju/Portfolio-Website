@@ -291,7 +291,8 @@ header {
   margin: 0 auto;
 }
 .info-boxes p{
-  font-size: 0.93rem;
+  font-size: 0.8rem;
+  color: aliceblue;
   
 
 }
@@ -318,4 +319,30 @@ header {
 }
 .info-boxes:hover{
   box-shadow: 0 0 7px #727fde;
+}
+.project-container{
+  width: 70%;
+  
+}
+.projects-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 10vh;
+}
+#projects-title{
+  text-align: center;
+}
+.project-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20vh;
+}
+.project-box video{
+  width: 70%;
+  height: 200px;
+  mix-blend-mode: lighten;
+  border: 2px solid #727fde;
+  border-radius: 20px;
 }
